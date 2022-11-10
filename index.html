@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Pricing Component with toggle Master</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="bg top">
+          <img src="./images/bg-top.svg" alt="bg-top" class="top-img" />
+        </div>
+        <h2 class="pricing-our">Our Pricing</h2>
+        <div class="choice-btn">
+          <small class="choice">Annually</small>
+          <div class="switch-bg">
+            <button id="switch"></button>
+          </div>
+          <small class="choice">Monthly</small>
+        </div>
+        <section>
+          <div class="basic card">
+            <small class="label">Basic</small>
+            <strong class="price"
+              ><span class="dollar"> &dollar;</span
+              ><span class="basic-price">19.99</span></strong
+            >
+            <div class="advantages">
+              <small class="content">500 GB Storage</small>
+              <small class="content">2 Users Allowed</small>
+              <small class="content">Send up to 3 GB</small>
+            </div>
+            <button id="learn">Learn More</button>
+          </div>
+          <div class="pro card">
+            <small>Professional</small>
+            <strong class="price"
+              ><span class="dollar"> &dollar;</span
+              ><span class="pro-price">24.99</span></strong
+            >
+            <div class="advantages">
+              <small class="content content-pro">1 TB Storage</small>
+              <small class="content content-pro">5 Users Allowed</small>
+              <small class="content content-pro">Send up to 10 GB</small>
+            </div>
+            <button id="learn-pro">Learn More</button>
+          </div>
+          <div class="master card">
+            <small class="label">Master</small>
+            <strong class="price"
+              ><span class="dollar"> &dollar;</span
+              ><span class="master-price"> 39.99</span></strong
+            >
+            <div class="advantages">
+              <small class="content">2 TB Storage</small>
+              <small class="content">10 Users Allowed</small>
+              <small class="content">Send up to 20 GB</small>
+            </div>
+            <button id="learn">Learn More</button>
+          </div>
+          <div class="bg bottom">
+            <img src="./images/bg-bottom.svg" alt="bg-bottom" />
+          </div>
+        </section>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://www.frontendmentor.io/home">Kuro</a>.
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

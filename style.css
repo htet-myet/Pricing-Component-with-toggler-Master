@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: all 300ms;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: hsl(240, 78%, 98%);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+}
+
+.top {
+  right: 0;
+  top: -15%;
+}
+
+.bottom {
+  left: 0;
+  bottom: -1%;
+  background-size: cover;
+}
+
+.pricing-our {
+  color: hsl(233, 13%, 49%);
+  margin-top: 2em;
+}
+
+.choice-btn {
+  display: flex;
+  align-items: center;
+}
+
+.choice {
+  color: hsl(234, 14%, 74%);
+}
+
+.switch-bg {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  width: 55px;
+  border-radius: 20px;
+  height: 28px;
+  margin: 2em;
+}
+
+.pale-bg {
+  background-color: hsl(234, 14%, 74%);
+  background-image: none;
+}
+
+#switch {
+  border-radius: 100%;
+  width: 22px;
+  outline: none;
+  border: 1px solid hsl(240, 78%, 98%);
+  background-color: hsl(240, 78%, 98%);
+  height: 22px;
+  cursor: pointer;
+  margin: 3px 5px;
+  transform: translateX(100%);
+}
+
+.animation {
+  animation: switch 300ms both;
+}
+
+@keyframes switch {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translatex(0%);
+  }
+}
+
+.backward {
+  animation: backward 500ms backwards;
+}
+
+@keyframes backward {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+section {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2em;
+}
+
+.card {
+  background-color: white;
+  color: hsl(232, 13%, 33%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 25%;
+  border-radius: 10px;
+  gap: 1em;
+  padding: 2em;
+  z-index: 1;
+}
+
+.pro {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: hsl(240, 78%, 98%);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  translate: 0 -4%;
+  margin-top: 5px;
+}
+
+.label {
+  color: hsl(233, 13%, 49%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.dollar {
+  font-size: 0.5em;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.content {
+  border-bottom: 0.5px solid hsl(234, 14%, 74%);
+  padding-bottom: 1em;
+  width: 100%;
+  color: hsl(233, 13%, 49%);
+}
+
+.content-pro {
+  color: hsl(240, 78%, 98%);
+}
+
+#learn {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  outline: none;
+  border: 1px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: hsl(240, 78%, 98%);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: all 300ms;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+#learn:hover {
+  background-image: none;
+  background-color: white;
+  border: 1px solid hsl(232, 13%, 33%);
+  color: hsl(237, 63%, 64%);
+}
+
+#learn-pro {
+  background-color: hsl(240, 78%, 98%);
+  outline: none;
+  border: 1px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: hsl(237, 63%, 64%);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+#learn-pro:hover {
+  background-color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
+}
+
+.attribution {
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .switch-bg {
+    margin: 5em 2em;
+  }
+
+  .card {
+    width: 400px;
+    margin-bottom: 1.5em;
+  }
+
+  .pro {
+    width: 400px;
+    margin-top: 1.5em;
+  }
+
+  .price {
+    font-size: 4em;
+  }
+
+  .top {
+    top: -1em;
+    right: -9em;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    width: 85%;
+  }
+
+  .pro {
+    width: 85%;
+  }
+
+  .top {
+    right: -13em;
+  }
+
+  .price {
+    font-size: 16vw;
+  }
+}
